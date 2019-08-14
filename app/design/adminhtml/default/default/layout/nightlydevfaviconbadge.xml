@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<layout version="0.1.0">
+    <default>
+        <reference name="head">
+          <action ifconfig="design/nightlydevfaviconbadge_admin/enabled" method="addJs"><script>nightlydev/faviconbadge/favico-0.3.4.min.js</script></action>
+        </reference>
+        <reference name="js">
+          <block name="nightlydevfaviconbadge" type="core/template" template="nightlydevfaviconbadge/faviconbadge.phtml" />
+        </reference>
+    </default>
+</layout>

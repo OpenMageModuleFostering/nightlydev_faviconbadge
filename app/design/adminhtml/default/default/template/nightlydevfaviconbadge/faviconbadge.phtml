@@ -1,0 +1,28 @@
+<?php if (!Mage::getStoreConfig(NightlyDev_FaviconBadge_Helper_Data::XML_PATH_FAVBADGE_ADMIN_ENABLED)) return; ?>
+<?php $badge = Mage::helper('nightlydevfaviconbadge')->getAdminBadges(); ?>
+<?php if (!$badge->getOrders() and !$badge->getErrors()) return; ?>
+<script type="text/javascript"><!--
+Event.observe(window, "load", function(){
+<?php if($badge->getOrders()): ?>
+  (new nightlydevFavico({
+    bgColor   : '#009414',
+    textColor : '#FF0',
+    position  : 'upleft',
+    animation : 'popFade',
+    type      : 'circle'
+  })).badge(<?php echo $badge->getOrders(); ?>);
+<?php endif; ?>
+<?php if($badge->getErrors()): ?>
+  <?php if($badge->getOrders()): ?>setTimeout(function(){<?php endif; ?>
+  (new nightlydevFavico({
+    bgColor   : '#F00',
+    textColor : '#FF0',
+    position  : 'down',
+    animation : 'popFade',
+    type      : 'circle'
+  })).badge(<?php echo $badge->getErrors(); ?>);
+  <?php if($badge->getOrders()): ?>},1000);<?php endif; ?>
+<?php endif; ?>
+});
+//-->
+</script>

@@ -1,0 +1,18 @@
+<?php if (!Mage::getStoreConfig(NightlyDev_FaviconBadge_Helper_Data::XML_PATH_FAVBADGE_ENABLED)) return; ?>
+<script type="text/javascript"><!--
+Event.observe(window, "load", function(){
+  window.nightlydevBadge = new nightlydevFavico({
+    bgColor   : '<?php echo Mage::helper('nightlydevfaviconbadge')->getBc(); ?>',
+    textColor : '<?php echo Mage::helper('nightlydevfaviconbadge')->getTc(); ?>',
+    position  : '<?php echo Mage::helper('nightlydevfaviconbadge')->getPos(); ?>',
+    animation : '<?php echo Mage::helper('nightlydevfaviconbadge')->getAnim(); ?>',
+    type      : '<?php echo Mage::helper('nightlydevfaviconbadge')->getShape(); ?>'
+  });
+  window.nightlydevBadge.badge(<?php echo Mage::helper('nightlydevfaviconbadge')->getBadge(); ?>);
+  <?php if ((int)Mage::getStoreConfig(NightlyDev_FaviconBadge_Helper_Data::XML_PATH_FAVBADGE_TYPE)===NightlyDev_FaviconBadge_Helper_Data::TYPE_CART_ERRORS): ?>
+  window.nightlydevbadgeerror = 0;
+  setInterval(function(){if(document.getElementsByClassName('validation-failed').length!=window.nightlydevbadgeerror){window.nightlydevbadgeerror=document.getElementsByClassName('validation-failed').length;window.nightlydevBadge.badge(window.nightlydevbadgeerror)}}, 500);
+  <?php endif; ?>
+});
+//-->
+</script>

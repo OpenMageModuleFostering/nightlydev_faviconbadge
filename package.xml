@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<package>
+    <name>NightlyDev_FaviconBadge</name>
+    <version>1.0.0.0</version>
+    <stability>stable</stability>
+    <license uri="http://license.nightlydev.org">GNU General Public License (GPLv3)</license>
+    <channel>community</channel>
+    <extends/>
+    <summary>Highly customizable favicon badges for customers (frontend) and administrators or developers (backend).</summary>
+    <description>Highly customizable favicon badges for customers (frontend) and administrators or developers (backend).</description>
+    <notes>Highly customizable favicon badges for customers (frontend) and administrators or developers (backend).</notes>
+    <authors><author><name>Carles Tubio</name><user>nightlydev</user><email>input@nightlydev.org</email></author></authors>
+    <date>2014-06-14</date>
+    <time>19:47:20</time>
+    <contents><target name="magecommunity"><dir name="NightlyDev"><file name="LICENSE" hash="d32239bcb673463ab874e80d47fae504"/><dir name="FaviconBadge"><dir name="Block"><dir name="Adminhtml"><dir name="System"><dir name="Config"><dir name="Source"><file name="Date.php" hash="32eab3307f79990713d4efe80be3936b"/></dir></dir></dir></dir></dir><dir name="Helper"><file name="Data.php" hash="e2df67eb56cb8e9d7b257a059e6b24de"/></dir><dir name="Model"><dir name="Adminhtml"><dir name="System"><dir name="Config"><dir name="Source"><file name="Alerts.php" hash="e1d3824fc0aa2f9af0f4087d5098defb"/><file name="Anims.php" hash="bd09ecb13553bb5722c36b83e86b452d"/><file name="Downs.php" hash="b0cf19646df162f23eeb2f3d61ed10ab"/><file name="Pos.php" hash="db8b17daf9c65efd937469600cf7bd87"/><file name="Shapes.php" hash="9e4ddb29ad14d79208fada9a29263ce5"/><file name="Types.php" hash="30db3202a857953419dc4f2f9dfb2cd8"/></dir></dir></dir></dir></dir><dir name="etc"><file name="config.xml" hash="d215db3f2ec57769894e67ed036ca131"/><file name="system.xml" hash="6d31238fd8f75d24a9cafe2da072aab3"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="NightlyDev_FaviconBadge.xml" hash="ebbfca18b7ea3dc9aa6c0d1146b07010"/></dir></target><target name="mageweb"><dir name="js"><dir name="nightlydev"><dir name="faviconbadge"><file name="favico-0.3.4.min.js" hash="81a113b850d797c7d2ccb2e0f8bf6af0"/><file name="favico.js" hash="2d93d5730523e4da4455899ebce14eea"/></dir><dir name="jscolor"><file name="arrow.gif" hash="5034704a76cd55c1cbcbc58ea6bf523f"/><file name="cross.gif" hash="ba9a274b9323753cd95bc3b1eb2f4e5f"/><file name="hs.png" hash="fefa1a03d92ebad25c88dca94a0b63db"/><file name="hv.png" hash="990d71cada17da100653636cf8490884"/><file name="jscolor.js" hash="3afd625d05b34532e4122663b5cf21a9"/></dir></dir></dir></target><target name="magedesign"><dir name="adminhtml"><dir name="default"><dir name="default"><dir name="layout"><file name="nightlydevfaviconbadge.xml" hash="e6d475f2d1c84fd764caac259037003b"/></dir><dir name="template"><dir name="nightlydevfaviconbadge"><file name="faviconbadge.phtml" hash="ea4c32319b3274251e4327fdc96e0b5a"/></dir></dir></dir></dir></dir><dir name="frontend"><dir name="base"><dir name="default"><dir name="layout"><file name="nightlydevfaviconbadge.xml" hash="531398761321f4464e8aac42ce69a49b"/></dir><dir name="template"><dir name="nightlydevfaviconbadge"><file name="faviconbadge.phtml" hash="4f7e9287d1440cad730439c4779e53d0"/></dir></dir></dir></dir></dir></target></contents>
+    <compatible/>
+    <dependencies><required><php><min>5.0.0</min><max>5.5.5</max></php></required></dependencies>
+</package>

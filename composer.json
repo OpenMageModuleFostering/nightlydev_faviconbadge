@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/NightlyDev_FaviconBadge",
+    "type": "magento-module",
+    "license": "GNU-General-Public-License-(GPLv3)",
+    "homepage": "",
+    "description": "Highly customizable favicon badges for customers (frontend) and administrators or developers (backend).",
+    "authors": [
+    {
+        "name": "Carles Tubio",
+        "email": "input@nightlydev.org"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

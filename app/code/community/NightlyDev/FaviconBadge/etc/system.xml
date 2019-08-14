@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<config>
+    <sections>
+        <design>
+            <groups>
+                <nightlydevfaviconbadge translate="label">
+                    <label>Favicon Badges in Frontend pages</label>
+                    <sort_order>5580</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>1</show_in_website>
+                    <show_in_store>1</show_in_store>
+                    <fields>
+                        <enabled translate="label">
+                            <label>Favicon Badges in Frontend</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                        </enabled>
+                        <bc translate="label">
+                            <label>Background Color</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>30</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <validate>color {required:true, adjust:false, hash:true}</validate>
+                            <depends><enabled>1</enabled></depends>
+                        </bc>
+                        <tc translate="label">
+                            <label>Numeric Text Color</label>
+                            <frontend_type>text</frontend_type>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <validate>color {required:true, adjust:false, hash:true}</validate>
+                            <depends><enabled>1</enabled></depends>
+                        </tc>
+                        <pos translate="label">
+                            <label>Position</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>nightlydevfaviconbadge/adminhtml_system_config_source_pos</source_model>
+                            <sort_order>100</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends><enabled>1</enabled></depends>
+                        </pos>
+                        <anim translate="label">
+                            <label>Animation</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>nightlydevfaviconbadge/adminhtml_system_config_source_anims</source_model>
+                            <sort_order>110</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends><enabled>1</enabled></depends>
+                        </anim>
+                        <shape translate="label">
+                            <label>Shape</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>nightlydevfaviconbadge/adminhtml_system_config_source_shapes</source_model>
+                            <sort_order>120</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends><enabled>1</enabled></depends>
+                        </shape>
+                        <type translate="label">
+                            <label>Show number of</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>nightlydevfaviconbadge/adminhtml_system_config_source_types</source_model>
+                            <sort_order>200</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends><enabled>1</enabled></depends>
+                        </type>
+                        <order translate="label">
+                            <label>Show number of Status</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_order_status</source_model>
+                            <sort_order>210</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends><type>8</type></depends>
+                        </order>
+                        <downs translate="label">
+                            <label>Show number of Status</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>nightlydevfaviconbadge/adminhtml_system_config_source_downs</source_model>
+                            <sort_order>220</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends><type>16</type></depends>
+                        </downs>
+                        <num translate="label comment">
+                            <label>Show number</label>
+                            <frontend_type>text</frontend_type>
+                            <validate>validate-digits</validate>
+                            <sort_order>220</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <depends><type>64</type></depends>
+                        </num>
+                        <date translate="label">
+                            <label>Show number of days until</label>
+                            <frontend_type>text</frontend_type>
+                            <frontend_model>nightlydevfaviconbadge/adminhtml_system_config_source_date</frontend_model>
+                            <sort_order>220</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>1</show_in_website>
+                            <show_in_store>1</show_in_store>
+                            <format>yyyy-MM-dd</format>
+                            <depends><type>32</type></depends>
+                        </date>
+                    </fields>
+                </nightlydevfaviconbadge>
+                <nightlydevfaviconbadge_admin translate="label">
+                    <label>Favicon Badges in Admin pages</label>
+                    <sort_order>5590</sort_order>
+                    <show_in_default>1</show_in_default>
+                    <show_in_website>0</show_in_website>
+                    <show_in_store>0</show_in_store>
+                    <fields>
+                        <enabled translate="label">
+                            <label>Favicon Badges for Admins</label>
+                            <frontend_type>select</frontend_type>
+                            <source_model>adminhtml/system_config_source_enabledisable</source_model>
+                            <sort_order>10</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                        </enabled>
+                        <alert translate="label">
+                            <label>Alert admins about the number of</label>
+                            <frontend_type>select</frontend_type>
+                            <comment>Orders will have green background, and Errors red.</comment>
+                            <source_model>nightlydevfaviconbadge/adminhtml_system_config_source_alerts</source_model>
+                            <sort_order>20</sort_order>
+                            <show_in_default>1</show_in_default>
+                            <show_in_website>0</show_in_website>
+                            <show_in_store>0</show_in_store>
+                            <depends><enabled>1</enabled></depends>
+                        </alert>
+                    </fields>
+                </nightlydevfaviconbadge_admin>
+            </groups>
+        </design>
+    </sections>
+</config>
